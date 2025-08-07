@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@include('backend/item/css')
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="">
+	<!--wrapper-->
+	<div class="wrapper">
+		<div class="section-authentication-signin d-flex align-items-center justify-content-center my-5 my-lg-0">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+					<div class="col mx-auto">
+						<div class="card mb-0">
+							<div class="card-body">
+								<div class="">
+									<div class="text-center">
+										<img src="{{ asset('assets/logo_ittihad.png') }}" width="300" alt=""/>
+									</div>
+									<div class="text-center mb-4">
+									</div>
+									<div class="form-body">
+                                        @if ($errors->any())
+                                            <div class="alert alert-danger">
+                                                <ul class="mb-0">
+                                                    @foreach ($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @endif
+										<form class="row g-3" action="registPost" method="POST">
+											@csrf
+											<div class="col-12">
+												<label for="inputName" class="form-label">Nama</label>
+												<input type="text" name="nama_alumni" class="form-control" id="inputName" placeholder="Nama">
+											</div>
+                                            <div class="col-12">
+												<label for="inputEmailAddress" class="form-label">Email</label>
+												<input type="email" name="email" class="form-control" id="inputEmailAddress" placeholder="ex@gmail.com">
+											</div>
+											<div class="col-12">
+												<label for="inputChoosePassword" class="form-label">Password</label>
+												<div class="input-group" id="show_hide_password">
+													<input type="password" name="password" class="form-control border-end-0" id="inputChoosePassword" placeholder="Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+												</div>
+											</div>
+                                            <div class="col-12">
+                                                <label for="inputConfirmPassword" class="form-label">Konfirmasi Password</label>
+                                                <input type="password" name="password_confirmation" class="form-control" id="inputConfirmPassword" placeholder="Konfirmasi Password">
+                                            </div>
+											<div class="col-md-12">
+												<label>reCAPTCHA</label>
+												<div class="g-recaptcha" data-sitekey="6LdgDOYiAAAAAJ2jtgPofsp_S0WqWu-Fd_YtHgn6" style="transform:scale(0.66);-webkit-transform:scale(0.66);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+											</div>
+											<div class="col-12">
+												<div class="d-grid">
+													<button type="submit" class="btn btn-primary mb-3">Regist</button>
+												</div>
+											</div>
+                                        </form>
+                                        <div class="col-12">
+                                            <div class="text-center ">
+                                                <p class="mb-0">Copyright © 2025<br> dibagun dan dikembangkan oleh <br><a href="#" class="text-dark" target="_blank">Hasna Fikriyah Dwinas</a></p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
+		</div>
+	</div>
+	<!--end wrapper-->
+
+	@include('backend/item/js')
+	<script>
+		$(document).ready(function () {
+			$("#show_hide_password a").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_password input').attr("type") == "text") {
+					$('#show_hide_password input').attr('type', 'password');
+					$('#show_hide_password i').addClass("bx-hide");
+					$('#show_hide_password i').removeClass("bx-show");
+				} else if ($('#show_hide_password input').attr("type") == "password") {
+					$('#show_hide_password input').attr('type', 'text');
+					$('#show_hide_password i').removeClass("bx-hide");
+					$('#show_hide_password i').addClass("bx-show");
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
