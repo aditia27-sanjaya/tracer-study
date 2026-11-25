@@ -68,13 +68,13 @@ Tracer Study merupakan sistem informasi berbasis web yang dirancang untuk memban
 #### 4.2 Jadwal/Periode
 ![Dashboard](screenshot/jadwal_admin.png)
 
+#### 4.3 Kuisioner
+![Dashboard](screenshot/kuisioner_admin.png)
+![Dashboard](screenshot/kuisionerPilihan_admin.png)
+
 ## 👨‍💻 Developer
 
 **Aditia Sanjaya**
 
 GitHub : [@aditia27-sanjaya](https://github.com/aditia27-sanjaya)
 Email : aditsanjayaa27@gmail.com
-#### 4.3 Kuisioner
-![Dashboard](screenshot/kuisioner_admin.png)
-![Dashboard](screenshot/kuisionerPilihan_admin.png)
-
