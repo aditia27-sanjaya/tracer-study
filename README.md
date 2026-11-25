@@ -1,64 +1,80 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Tracer Study - SMAIT AL-ITTIHAD
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Deskripsi Project
 
-## About Laravel
+Tracer Study merupakan sistem informasi berbasis web yang dirancang untuk membantu pihak sekolah dalam memperoleh informasi mengenai aktivitas dan perkembangan alumni setelah lulus.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Fitur
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 1. Landing Page
+- Visualisasi Grafik Alumni.
+- Informasi Periode Pengisian.
+- Informasi Tata Cara Pengisian.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 2. Level User
+- Role Admin.
+- Role User.
 
-## Learning Laravel
+### 3. Dashboard
+- Ringkasan Jumlah Alumni.
+- Visualisasi Alumni berdasarkan angkatan menggunakan donut chart.
+- Visualisasi jumlah Alumni yang sudah mengisi berdasarkan angkatan menggunakan horizontal bar chart.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 3. Jadwal/Periode
+- Pengelolaan Data jadwal dan periode.
+- Setting status Aktif/Tidak Aktif jadwal dan periode.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 4. Kuisioner
+- Pengelolaan Data Kuisioner.
+- Penyesuaian Jenis/Tipe Pertanyaan Kuisioner.
+- Penyesuaian Jumlah Pilihan Ganda Kuisioner.
 
-## Laravel Sponsors
+### 5. Alumni
+- Pengelolaan Data Alumni.
+- Detail Profil Alumni.
+- Jawaban Isian Kuisioner Alumni.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## 🛠️ Teknologi yang Digunakan
 
-### Premium Partners
+- PHP 7.4
+- Laravel 8
+- MySQL
+- Bootstrap
+- JavaScript
+- Composer
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## 📸 Application Screenshots
 
-## Contributing
+### 1. Landing Page
+![Dashboard](screenshot/landingPage.png)
+![Dashboard](screenshot/landingPage2.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 2. Login and Regist
+![Dashboard](screenshot/register.png)
+![Dashboard](screenshot/login.png)
 
-## Code of Conduct
+### 3. Role User
+#### 3.1 Dashboard
+![Dashboard](screenshot/dashboard_user.png)
+![Dashboard](screenshot/kuisionerFill_user.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### 3.2 Pengisian Kuisioner
+![Dashboard](screenshot/kusioner_user.png)
 
-## Security Vulnerabilities
+### 4. Role Admin
+#### 4.1 Dashboard
+![Dashboard](screenshot/dashboard_admin.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#### 4.2 Jadwal/Periode
+![Dashboard](screenshot/jadwal_admin.png)
 
-## License
+## 👨‍💻 Developer
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Aditia Sanjaya**
+
+GitHub : [@aditia27-sanjaya](https://github.com/aditia27-sanjaya)
+Email : aditsanjayaa27@gmail.com
+#### 4.3 Kuisioner
+![Dashboard](screenshot/kuisioner_admin.png)
+![Dashboard](screenshot/kuisionerPilihan_admin.png)
+
